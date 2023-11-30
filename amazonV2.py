@@ -1,7 +1,7 @@
+import csv
 import pandas as pd
-lst = ['Geeks', 'For', 'Geeks', 'is', 
-            'portal', 'for', 'Geeks']
  
-# Calling DataFrame constructor on list
-df = pd.DataFrame(lst)
+df = pd.read_csv('bestsellers with categories.csv') 
+df = pd.DataFrame(data)
+ 
 print(df)
