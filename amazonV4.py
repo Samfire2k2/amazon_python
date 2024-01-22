@@ -6,10 +6,9 @@ df = pd.DataFrame(df)
 colonne_annee = 'Year'
 annees_uniques = df[colonne_annee].unique()
 
-#boucler pour avoir les donnees de 2015
+#boucler pour avoir les donnees de toutes les annees, en fichiers separes
 for year in annees_uniques:
     df_year = df[df[colonne_annee] == year]
     df_year.to_csv(f'bestsellers_{year}.csv', sep=',' ,index=False, encoding='utf-8')
 
 print("Le traitement est fini.")
-#print(annees_uniques)
